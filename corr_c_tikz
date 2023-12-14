@@ -1,0 +1,81 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=1,
+xmax=4,
+ymin=-0.01,
+ymax=0.09,
+axis background/.style={fill=white}
+]
+
+\addplot[area legend,solid,fill=red,fill opacity=0.3,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1	-0.00407329007305177\\
+2	-0.00534758466357793\\
+3	-0.00443435830886247\\
+4	-0.00392122612201862\\
+4	0.00794280027525946\\
+3	0.00145051690165251\\
+2	0.000434558610265305\\
+1	0.000513449244665617\\
+}--cycle;
+\addplot [color=red,solid,line width=2.0pt,forget plot]
+  table[row sep=crcr]{%
+1	-0.00131806314010169\\
+2	-0.000723605135678544\\
+3	-0.00045933430225303\\
+4	-0.000134077124315155\\
+};
+
+\addplot[area legend,solid,fill=black,fill opacity=0.3,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1	0.00558599954620161\\
+2	-0.00147912109660292\\
+3	-0.00231121074171172\\
+4	-0.00392122612201862\\
+4	0.00794280027525946\\
+3	0.0116742559004092\\
+2	0.0542609722904056\\
+1	0.0864932802588492\\
+}--cycle;
+\addplot [color=black,solid,line width=2.0pt,forget plot]
+  table[row sep=crcr]{%
+1	0.0387050814434597\\
+2	0.0253186343061474\\
+3	0.00661232030463174\\
+4	-0.000134077124315155\\
+};
+
+\addplot[area legend,solid,fill=blue,fill opacity=0.3,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1	0.0162260388740442\\
+2	0.00963141923390367\\
+3	-0.00308444080193657\\
+4	-0.00392122612201862\\
+4	0.00794280027525946\\
+3	0.0109010258401843\\
+2	0.0440465137954129\\
+1	0.0638166507476322\\
+}--cycle;
+\addplot [color=blue,solid,line width=2.0pt,forget plot]
+  table[row sep=crcr]{%
+1	0.0392717143935886\\
+2	0.0220206644668697\\
+3	0.0045217217002356\\
+4	-0.000134077124315155\\
+};
+\end{axis}
+\end{tikzpicture}%

@@ -1,0 +1,65 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{1.00000,0.00000,1.00000}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=\figurewidth,
+height=\figureheight,
+xlabel={$n_2$},
+%ylabel={Payoff gain},
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=0.5,
+xmax=4.5,
+%xmajorgrids,
+ymin=0,
+ymax=0.12,
+ytick={0, 0.03, 0.06, 0.09, 0.12},
+ymajorgrids,
+yticklabel style={
+	/pgf/number format/fixed,
+	/pgf/number format/precision=5
+},
+scaled y ticks=false,
+axis background/.style={fill=white}
+]
+\addplot [color=red,solid,line width=2pt,forget plot]
+ plot [error bars/.cd, y dir = both, y explicit]
+ table[row sep=crcr, y error plus index=2, y error minus index=3]{%
+1	0.0365035147654806	-0.00809772597764753	-0.0340822414639062\\
+2	0.000572056529584979	-0.0145338427943239	-0.000572056529584979\\
+3	0	0	0\\
+4	0.000213316918897016	-0.0283517435685528	-0.000213316918897016\\
+};
+\addplot [color=blue,dashed,line width=2pt,forget plot]
+ plot [error bars/.cd, y dir = both, y explicit]
+ table[row sep=crcr, y error plus index=2, y error minus index=3]{%
+1	0.0402853140088912	-0.00277912159803966	-0.00143088424451263\\
+2	0.00829938076362126	-0.00942287776801535	-0.00817448079666397\\
+3	0	0	0\\
+4	0.000213316918897016	-0.0283517435685528	-0.000213316918897016\\
+};
+\addplot [color=black,solid,line width=2pt,forget plot]
+ plot [error bars/.cd, y dir = both, y explicit]
+ table[row sep=crcr, y error plus index=2, y error minus index=3]{%
+1	0.0400231445835614	-0.048553788706716	-0.0324651805360243\\
+2	0.0260422394418259	-0.0292693655159137	-0.0259789824952344\\
+3	0.00707165460688477	-0.00723312784339178	-0.00697390986115984\\
+4	0	0	0\\
+};
+\addplot [color=green,dashed,line width=2pt,forget plot]
+ plot [error bars/.cd, y dir = both, y explicit]
+ table[row sep=crcr, y error plus index=2, y error minus index=3]{%
+1	0.0405897775336903	-0.0246960070026647	-0.0228975079517473\\
+2	0.0227442696025482	-0.022490095553784	-0.0129393196692637\\
+3	0.00498105600248863	-0.00697165639365702	-0.00491611443676188\\
+4	0	0	0\\
+};
+\end{axis}
+\end{tikzpicture}%
